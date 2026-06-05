@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f6f3;
+    color:#222;
+}
+
+header{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+     width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    color:#d1d5db;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c08457;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+}
+
+.product{
+    background:white;
+    width:250px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+}
+
+.product img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:15px;
+    text-align:center;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#c08457;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.about-section{
+    padding:60px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.about-section h2{
+    margin-bottom:20px;
+}
+
+.about-section p{
+    line-height:1.8;
+}
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box h3{
+    margin-bottom:20px;
+}
+
+.contact-box p{
+    margin:15px 0;
+}
+
+.whatsapp{
+    background:#25d366;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .products{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
